@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title dir="rtl">یُونی کُوڈ ایڈیٹر</title>
+	<style>
+	#key{
+	background-color:#999900;
+	cursor:hand;
+		}
+	</style>
+
+	<!-- Include different language files -->
+<script type="text/javascript" src = "lang-urdu.js" ></script>
+</head>
+
+<body>
+
+	<form method="POST" name="frm">
+		<table width="500" align="center" border="0" bgcolor="#CC3300">	
+			<tr>
+				<td width="500">	
+					<a onClick="window.open('keyboard.jpg', null,'resizable=no,top=0,left=0 width=540 height=228')" id="key" target="_blank"><font color="#000099"><u>Show keyboard</u></font></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				Unicode Editor :: یُونی کُوڈ ایڈیٹر
+				</td>
+			</tr>
+			<tr>
+				<td width="500" align="center" valign="top">
+					<textarea dir="rtl" id="tex" name="T1" cols="40" rows="10" style="font-size:24px" onKeyPress="return urduUnicode(this,event)"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">
+					<input dir="rtl" type="text" name="els" style="font-size:24px" onKeyPress="return urduUnicode(this,event)" >
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+
+</html>
